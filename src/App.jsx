@@ -100,7 +100,7 @@ function App() {
     setMsg('');
     // trigger file organization
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/categorize`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/categorize`, {
         method: 'POST'
       });
       if (!response.ok) {
@@ -166,7 +166,7 @@ function App() {
 
     // upload files to api
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/upload`, {
+      const response = await fetch(`https://google-drive-organizer.onrender.com/api/upload`, {
         method: 'POST',
         body: formData
       });
